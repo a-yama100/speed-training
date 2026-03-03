@@ -10,12 +10,15 @@ export const metadata: Metadata = {
     template: '%s | Speed Processing Training'
   },
   description: 'Free adaptive speed-of-processing training inspired by the landmark ACTIVE study. Train your visual attention and processing speed to build cognitive reserve.',
+  keywords: ['cognitive training', 'speed of processing', 'ACTIVE study', 'brain training', 'visual attention', 'processing speed', 'cognitive reserve', 'dementia prevention', 'free brain training'],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     alternateLocale: 'ja_JP',
     url: 'https://speed.phtechai.com',
     siteName: 'Speed Processing Training',
+    title: 'Speed Processing Training - Free Cognitive Training Based on the ACTIVE Study',
+    description: 'Free adaptive speed-of-processing training inspired by the ACTIVE study. Train your visual attention and processing speed to build cognitive reserve.',
   },
   icons: {
     icon: [
@@ -23,6 +26,11 @@ export const metadata: Metadata = {
     ],
   },
   robots: { index: true, follow: true },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Speed Processing Training - Cognitive Training Based on the ACTIVE Study',
+    description: 'Free adaptive speed-of-processing training. Train visual attention and processing speed to build cognitive reserve.',
+  },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
