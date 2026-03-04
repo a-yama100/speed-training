@@ -52,7 +52,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "applicationCategory": "HealthApplication",
               "operatingSystem": "Web",
               "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-              "creator": { "@type": "Organization", "name": "PH Tech AI", "url": "https://www.phaiworks.com" }
+              "creator": { "@type": "Organization", "name": "PH AI Works", "url": "https://www.phaiworks.com" }
             })
           }}
         />

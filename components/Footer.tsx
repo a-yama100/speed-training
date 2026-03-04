@@ -30,7 +30,7 @@ export function Footer() {
                 {isJa ? "研究について" : "About"}
               </Link>
               <a href="https://www.phaiworks.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                PH Tech AI
+                PH AI Works
               </a>
             </div>
             <div className="flex flex-col gap-2">
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-gray-500">
-          <span>{year} PH Tech AI. All Rights Reserved.</span>
+          <span>{year} PH AI Works. All Rights Reserved.</span>
           <Link href={isJa ? (pathname.replace("/ja", "") || "/") : ("/ja" + pathname)} className="text-gray-400 hover:text-white transition-colors">
             {isJa ? "English" : "Japanese"}
           </Link>
