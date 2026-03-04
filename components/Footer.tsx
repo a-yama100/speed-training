@@ -29,7 +29,7 @@ export function Footer() {
               <Link href={isJa ? "/ja/about" : "/about"} className="text-gray-400 hover:text-white transition-colors">
                 {isJa ? "研究について" : "About"}
               </Link>
-              <a href="https://www.phtechai.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.phaiworks.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 PH Tech AI
               </a>
             </div>

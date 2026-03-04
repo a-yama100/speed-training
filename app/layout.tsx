@@ -5,7 +5,7 @@ import './globals.css'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://speed.phtechai.com'),
+  metadataBase: new URL('https://speed.phaiworks.com'),
   title: {
     default: 'Speed Processing Training - Cognitive Training Based on the ACTIVE Study',
     template: '%s | Speed Processing Training'
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     alternateLocale: 'ja_JP',
-    url: 'https://speed.phtechai.com',
+    url: 'https://speed.phaiworks.com',
     siteName: 'Speed Processing Training',
     title: 'Speed Processing Training - Free Cognitive Training Based on the ACTIVE Study',
     description: 'Free adaptive speed-of-processing training inspired by the ACTIVE study. Train your visual attention and processing speed to build cognitive reserve.',
@@ -47,12 +47,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@context": "https://schema.org",
               "@type": "WebApplication",
               "name": "Speed Processing Training",
-              "url": "https://speed.phtechai.com",
+              "url": "https://speed.phaiworks.com",
               "description": "Free adaptive cognitive speed-of-processing training inspired by the ACTIVE study. Train visual attention and processing speed.",
               "applicationCategory": "HealthApplication",
               "operatingSystem": "Web",
               "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-              "creator": { "@type": "Organization", "name": "PH Tech AI", "url": "https://www.phtechai.com" }
+              "creator": { "@type": "Organization", "name": "PH Tech AI", "url": "https://www.phaiworks.com" }
             })
           }}
         />
