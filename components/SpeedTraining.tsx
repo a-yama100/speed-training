@@ -184,7 +184,7 @@ export default function SpeedTraining({ lang }: Props) {
             : "Consecutive correct answers shorten display time, increase distractors, and raise difficulty."}</p>
           <p className="text-xs text-gray-400">{isJa ? `全${TOTAL_TRIALS}試行` : `${TOTAL_TRIALS} trials per session`}</p>
         </div>
-        <button onClick={startSession} className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-lg">
+        <button onClick={startSession} className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-lg cursor-pointer">
           {isJa ? "スタート" : "Start Training"}
         </button>
       </div>
@@ -222,7 +222,7 @@ export default function SpeedTraining({ lang }: Props) {
             ? "ACTIVE研究では、このタイプの適応型トレーニングを継続したグループで認知症リスクが25%低下しました。"
             : "In the ACTIVE study, groups who continued this type of adaptive training showed a 25% reduction in dementia risk."}</p>
         </div>
-        <button onClick={() => { setPhase('ready') }} className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+        <button onClick={() => { setPhase('ready') }} className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors cursor-pointer">
           {isJa ? "もう一度" : "Try Again"}
         </button>
       </div>
@@ -306,7 +306,7 @@ export default function SpeedTraining({ lang }: Props) {
                   </div>
                 </div>
                 {selectedPeripheral !== null && (
-                  <button onClick={submitAnswer} className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors text-sm">
+                  <button onClick={submitAnswer} className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors text-sm cursor-pointer">
                     {isJa ? "回答する" : "Submit"}
                   </button>
                 )}

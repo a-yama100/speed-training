@@ -39,7 +39,7 @@ export function Header() {
             {isJa ? "EN" : "JP"}
           </Link>
         </nav>
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2 text-gray-600" aria-label="Menu">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden p-2 text-gray-600 cursor-pointer" aria-label="Menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d={menuOpen ? "M6 6l12 12M6 18L18 6" : "M4 8h16M4 16h16"}/></svg>
         </button>
       </div>
