@@ -276,11 +276,11 @@ export default function SpeedTraining({ lang }: Props) {
                 <p className="text-sm font-medium text-gray-700">{isJa ? "中央は？" : "Center object?"}</p>
                 <div className="flex gap-4">
                   <button onClick={() => { setSelectedCenter('car'); setAnswerStep('peripheral') }}
-                    className="w-20 h-20 bg-white border-2 border-gray-300 rounded-xl flex items-center justify-center text-3xl hover:border-blue-500 transition-colors">
+                    className="w-20 h-20 bg-white border-2 border-gray-300 rounded-xl flex items-center justify-center text-3xl hover:border-blue-500 transition-colors cursor-pointer">
                     {'\ud83d\ude97'}
                   </button>
                   <button onClick={() => { setSelectedCenter('truck'); setAnswerStep('peripheral') }}
-                    className="w-20 h-20 bg-white border-2 border-gray-300 rounded-xl flex items-center justify-center text-3xl hover:border-blue-500 transition-colors">
+                    className="w-20 h-20 bg-white border-2 border-gray-300 rounded-xl flex items-center justify-center text-3xl hover:border-blue-500 transition-colors cursor-pointer">
                     {'\ud83d\ude9a'}
                   </button>
                 </div>
@@ -294,7 +294,7 @@ export default function SpeedTraining({ lang }: Props) {
                     const labels = isJa ? PERIPHERAL_LABELS_JA : PERIPHERAL_LABELS_EN
                     return (
                       <button key={i} onClick={() => { setSelectedPeripheral(i as PeripheralPos); }}
-                        className={`absolute w-10 h-10 rounded-full border-2 flex items-center justify-center text-xs font-medium transition-all ${selectedPeripheral === i ? 'bg-blue-500 text-white border-blue-500' : 'bg-white border-gray-300 text-gray-600 hover:border-blue-400'}`}
+                        className={`absolute w-10 h-10 rounded-full border-2 flex items-center justify-center text-xs font-medium transition-all cursor-pointer ${selectedPeripheral === i ? 'bg-blue-500 text-white border-blue-500' : 'bg-white border-gray-300 text-gray-600 hover:border-blue-400'}`}
                         style={{ left: `calc(50% + ${x}px)`, top: `calc(50% + ${y}px)`, transform: 'translate(-50%, -50%)' }}
                         title={labels[i]}>
                         {labels[i].charAt(0)}
