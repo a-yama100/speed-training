@@ -3,6 +3,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import './globals.css'
 import Script from 'next/script'
+import { jsonLd } from '@/lib/security/escapeHtml'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://speed.phaiworks.com'),
@@ -43,7 +44,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+            __html: jsonLd({
               "@context": "https://schema.org",
               "@type": "WebApplication",
               "name": "Speed Processing Training",
